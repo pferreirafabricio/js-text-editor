@@ -39,7 +39,7 @@ body {
 
 #main .formText .editOptions {
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: var(--white-gray);
     /* background: linear-gradient(10deg, var(--white-gray), var(--white)); */
     border-radius: 3px 3px 0 0;
@@ -49,14 +49,14 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
 }
 
 #main .formText .editOptions ul li{
     font-weight: 700;
-    padding: 5px;
     cursor: pointer;
+    padding: 12px;
 }
 
 #main .formText .inputText textarea {
