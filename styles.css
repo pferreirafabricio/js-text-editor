@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 }
 
 html, body, #main {
+    font-family: Montserrat;
     height: 100%;
 }
 
@@ -38,6 +41,9 @@ html, body, #main {
     cursor: pointer;
 }
 
-#main .formText .inputText {
-    
+#main .formText .inputText div{
+    border: 1px solid #000;
+    height: 50%;
+    width: 100%;
+    padding: 5px;
 }
