@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
+:root {
+    --gray: rgb(36, 36, 36);
+    --baby-blue: #c1e3ff;
+    --blue: #a8c7ff;
+    --white-gray: #f0eff0;
+    --white: #fafaf9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +16,13 @@
 }
 
 html, body, #main {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     height: 100%;
+}
+
+body {
+    background: linear-gradient(0deg, var(--baby-blue), var(--blue) 60%);
+    /* background: linear-gradient(135deg, red, blue 60%); */
 }
 
 #main {
@@ -21,29 +34,40 @@ html, body, #main {
 
 #main .formText {
     width: 50vw;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 #main .formText .editOptions {
     width: 100%;
     height: 30px;
-    background-color: #666;
+    background-color: var(--white-gray);
+    /* background: linear-gradient(10deg, var(--white-gray), var(--white)); */
+    border-radius: 3px 3px 0 0;
 }
 
 #main .formText .editOptions ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    /* align-items: center; */
     justify-content: space-around;
 }
 
 #main .formText .editOptions ul li{
+    font-weight: 700;
     padding: 5px;
     cursor: pointer;
 }
 
-#main .formText .inputText div{
-    border: 1px solid #000;
+#main .formText .inputText textarea {
     height: 50%;
     width: 100%;
-    padding: 5px;
+    padding: 15px 10px;
+    border-radius: 0 0 3px 3px;
+    resize: none;
+    overflow: auto;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 20px;
 }
