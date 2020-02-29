@@ -11,19 +11,15 @@ var selectedText = '';
 // setInterval(getSelectedText, 1000);
 
 function getSelectedText() {
-   return textAreaEl.value.substring(textAreaEl.selectionStart, textAreaEl.selectionEnd)
+    if (window.getSelection) {
+        return textAreaEl.value.substring(textAreaEl.selectionStart, textAreaEl.selectionEnd)
+    }
 }
 
-// console.log(text);
-
 boldEl.addEventListener('click', () => {
-    const boldTag = document.createElement('b');
+    
+   
 });
-
-
-// boldEl.addEventListener = () => {
-//     console.log(selectedText);
-// }
 
 italicEl.onclick = () => {
 
