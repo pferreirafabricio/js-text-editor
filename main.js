@@ -1,6 +1,6 @@
 //Variables
 
-let selectedText = '';
+let selectedNode = '';
 
 const boldEl = document.getElementById('bold');
 const italicEl = document.getElementById('italic');
@@ -9,43 +9,28 @@ const underlinedEl = document.getElementById('underlined');
 const linkEl = document.getElementById('link');
 
 const divEl = document.querySelector('.inputText div');
-const pEl = document.querySelector('.inputText div p');
 
 //Function that catch the selected text and add the respectively tag
+
 function addStyleTag(tagHTML) {
 
-    /* anchor = o começo da seleção do usuario
-       focus = termino da seleção
-       ANCHOR CAN BE PLACED BEFORE THE FOCUS OR VICE VERSA, DEPENDING ON THE DIRECTION YOU MADE YOUR SELECTION.
-   */
+    //Getting the DOM element and the text
+    selectedNode = document.getSelection();
+    let selectionText = selectedNode.toString();
 
-    selectedText = document.getSelection();
-
-    const range = document.createRange();
-    const tag = document.createElement(tagHTML);
+    //Creating the respectively tag 
+    let tag = document.createElement(tagHTML);
+    
+    tag.textContent = selectionText;
 
     if (tagHTML === 'a') {
         tag.setAttribute('href', 'https://github.com/pferreirafabricio');
         tag.setAttribute('target', '_blank');
     }
 
-    range.selectNode(pEl);
-
-    //    range.setStart(pEl, selectedText.anchorOffset);
-    //    range.setEnd(pEl, selectedText.anchorOffset);
-
-    console.log(`range.selectNode: ${range.selectNode(pEl)}`);
-    range.surroundContents(tag);
-
-    console.log(`range: ${range}`);
-    console.log(`Bold tag: ${tag}`);
-
-    //    var ranger  = selectedText.getRangeAt(0);
-
-    //    console.log(selectedText.anchorNode); 
-    //    console.log("Começa: " + selectedText.anchorOffset); 
-    //    console.log("Termina: " + selectedText.anchorOffset); 
-    //    console.log(`range:  ${ranger}`); 
+    let range = selectedNode.getRangeAt(0);
+    range.deleteContents();
+    range.insertNode(tag);
 }
 
 
@@ -66,9 +51,6 @@ underlinedEl.onclick = () => {
 }
 
 linkEl.onclick = () => {
-    // const aEl = document.createElement('a').textContent;
-    // aEl.setAttribute('href', 'https://github.com/pferreirafabricio');
-    // console.log(aEl.toString());
     addStyleTag('a');
 }
 
