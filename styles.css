@@ -76,13 +76,14 @@ header {
 }
 
 #main .formText .inputText div {
+    display: inline-block;
     height: 300px;
     width: 100%;
-    padding: 15px 10px;
-    border-radius: 0 0 3px 3px;
-    overflow: auto;
+    padding: 15px;
     border: 0px;
     outline: 0px;
+    border-radius: 0 0 3px 3px;
+    overflow: auto;
     /* background-color: transparent; */
     font-size: 20px;
 }
