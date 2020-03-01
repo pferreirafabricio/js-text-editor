@@ -59,7 +59,7 @@ header {
     border-radius: 3px 3px 0 0;
 }
 
-#main .formText .editOptions ul {
+#main .formText .editOptions div {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -67,22 +67,23 @@ header {
     justify-content: space-around;
 }
 
-#main .formText .editOptions ul li{
+#main .formText .editOptions div button {
+    border: 0;
+    background: none;
     font-weight: 700;
     cursor: pointer;
     padding: 12px;
 }
 
-#main .formText .inputText textarea {
+#main .formText .inputText div {
     height: 300px;
     width: 100%;
     padding: 15px 10px;
     border-radius: 0 0 3px 3px;
-    resize: none;
     overflow: auto;
     border: 0px;
     outline: 0px;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-size: 20px;
 }
 

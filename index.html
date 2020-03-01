@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>You text edited NOW!</title>
+    <title>Your text edited NOW!</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
 
     <!-- Material Icons -->
@@ -17,16 +17,18 @@
 
         <form class="formText">
             <div class="editOptions">
-                <ul>
-                    <li title="Bold" id="bold"><i class="material-icons">format_bold</i></i>
-                    <li title="Italic" id="italic"><i class="material-icons">format_italic</i></li>
-                    <li title="Strikethrough" id="strikethrough"><i class="material-icons">strikethrough_s</i></li>
-                    <li title="Underlined" id="underlined"><i class="material-icons">format_underlined</i></li>
-                    <li title="Link" id="link"><i class="material-icons">link</i></li>
-                </ul>
+                <div>
+                    <button type='button' title="Bold" id="bold"><i class="material-icons">format_bold</i></button>
+                    <button type='button' title="Italic" id="italic"><i class="material-icons">format_italic</i></button>
+                    <button type='button' title="Strikethrough" id="strikethrough"><i class="material-icons">strikethrough_s</i></button>
+                    <button type='button' title="Underlined" id="underlined"><i class="material-icons">format_underlined</i></button>
+                    <button type='button' title="Link" id="link"><i class="material-icons">link</i></button>
+                </div>
             </div>
             <div class="inputText">
-                <textarea></textarea>
+                <div>
+                    <p contenteditable="true"></p>
+                </div>
             </div>
         </form>
     </main>
