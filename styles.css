@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Leckerli+One&display=swap');
 
 :root {
-    --gray: rgb(36, 36, 36);
+    --gray: rgb(27, 27, 27);
     --baby-blue: #c1e3ff;
     --blue: #a8c7ff;
     --white-gray: #f0eff0;
@@ -24,8 +24,6 @@ html, body, #main {
 
 body {
     background: linear-gradient(10deg, var(--white-gray), var(--white));
-    /* background: linear-gradient(0deg, var(--baby-blue), var(--blue) 60%); */
-    /* background: linear-gradient(135deg, red, blue 60%); */
 }
 
 header {
@@ -44,6 +42,7 @@ header {
 #main .coolText {
     margin-bottom: 50px;
     font-size: 30px;
+    -webkit-user-select: none;
 }
 
 #main .formText {
@@ -54,8 +53,7 @@ header {
 #main .formText .editOptions {
     width: 100%;
     height: 50px;
-    background-color: var(--mind-blowing);
-    /* background: linear-gradient(10deg, var(--white-gray), var(--white)); */
+    background-color: var(--gray);
     border-radius: 3px 3px 0 0;
 }
 
@@ -73,6 +71,7 @@ header {
     font-weight: 700;
     cursor: pointer;
     padding: 12px;
+    color: #fff;
 }
 
 #main .formText .inputText div {
@@ -84,7 +83,6 @@ header {
     outline: 0px;
     border-radius: 0 0 3px 3px;
     overflow: auto;
-    /* background-color: transparent; */
     font-size: 20px;
 }
 
@@ -94,4 +92,5 @@ footer .signature {
     right: 100px;
     font-family: Leckerli One;
     font-size: 20px;
+    -webkit-user-select: none; 
 }
