@@ -8,7 +8,7 @@
 
 ## :man_technologist: Tecnologias usadas
 
-O projeto foi desenvolvido visando utilizar as tecnologias HTML, CSS e JavaScript "puras", sem o auxílio de nenhum framework. <br/>
+O projeto foi desenvolvido visando utilizar o JavaScript "puro", sem o auxílio de nenhum framework. <br/>
 Outros recursos utilizados:
 - [CSS Icons](https://css.gg)
 
