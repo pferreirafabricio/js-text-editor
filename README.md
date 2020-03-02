@@ -2,7 +2,7 @@
 
 ## :eyes: Como ficou?
 
-<img src="./projectImages/screenshot-main.png" width="1300">
+<img src="./projectImages/text-editor.png" width="1300">
 
 > OBS: Funcionalidades ainda não terminadas totalmente.<br/>
 
