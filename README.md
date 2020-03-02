@@ -6,7 +6,7 @@
 
 > OBS: Funcionalidades ainda não terminadas totalmente.<br/>
 
-## :man_technologist: Tecnologias usadas
+## :shipit: Tecnologias usadas
 
 O projeto foi desenvolvido visando utilizar o JavaScript "puro", sem o auxílio de nenhum framework. <br/>
 Outros recursos utilizados:
