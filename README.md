@@ -2,7 +2,7 @@
 
 ## :eyes: Como ficou?
 
-<img src="./projectImages/main-screenshot.png" width="1300">
+<img src="./projectImages/screenshot-main.png" width="1300">
 
 > OBS: Funcionalidades ainda não terminadas totalmente.<br/>
 
@@ -10,7 +10,7 @@
 
 O projeto foi desenvolvido visando utilizar as tecnologias HTML, CSS e JavaScript "puras", sem o auxílio de nenhum framework. <br/>
 Outros recursos utilizados:
-- [Material Icons](https://material.io/resources/icons/)
+- [CSS Icons](https://css.gg)
 
 ## :computer: Sobre o projeto
 
