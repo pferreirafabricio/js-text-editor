@@ -1,5 +1,4 @@
 //Variables
-
 let selectedNode = '';
 
 const boldEl = document.getElementById('bold');

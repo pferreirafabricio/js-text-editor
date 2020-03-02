@@ -20,7 +20,6 @@
 html, body, #main {
     font-family: Montserrat, sans-serif;
     height: 100%;
-    
 }
 
 body {
@@ -66,7 +65,7 @@ body {
     color: #fff;
 }
 
-#main .formText .inputText div {
+#main .formText .inputText {
     display: inline-block;
     height: 300px;
     width: 100%;
